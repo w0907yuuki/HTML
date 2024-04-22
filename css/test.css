@@ -2,7 +2,7 @@
 .bi-list {
  font-size: 50px;
 }
-
+/* タイトルフォント */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 .titleh18{
 font-size: 4em;/* フォントサイズ */
