@@ -68,3 +68,15 @@
 　　      <li>情報3</li>
      </details>
     </div> 
+
+
+
+.image-config{
+    display:flex;
+    justify-content: space-between;
+}
+
+.image-config div{
+    width: 50%;
+    height: 20%; 
+}

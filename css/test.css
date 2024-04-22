@@ -26,3 +26,12 @@ left: 0;
 z-index: 0;
 }
 
+.image-config{
+    display:flex;
+}
+
+.image-config img{
+    width: 595px;
+    height: 395px; 
+}
+
