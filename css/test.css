@@ -1,0 +1,28 @@
+/* ハンバーガーメニュー */
+.bi-list {
+ font-size: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+.titleh18{
+font-size: 4em;/* フォントサイズ */
+font-weight: bold;/* フォント太さ */
+font-family: 'Caveat', cursive; /*フォント指定*/
+padding-top: .0em;
+padding-bottom: .5em;
+margin-bottom: 2em;
+position: relative;
+margin: 0em 0 1em;
+}
+.titleh18:before {
+position: absolute;
+content: "";
+display: block;
+width: 100%;
+height: 4px;
+background: repeating-linear-gradient(90deg, #F68B1E 0%,rgba(255, 255, 255, 0) 100%);
+bottom: 0;
+left: 0;
+z-index: 0;
+}
+
