@@ -57,26 +57,3 @@
 
 〇youtubeサイトを貼付
 〇X（Twitter）@MiyazakiCity_PR 貼付
-
-
-
-<div class="position-absolute top-0 end-0">
-     <details>
-         <summary><i class="bi bi-list top-0 end-0"></i></summary>
-          <li>情報1</li>
-　　      <li>情報2</li>
-　　      <li>情報3</li>
-     </details>
-    </div> 
-
-
-
-.image-config{
-    display:flex;
-    justify-content: space-between;
-}
-
-.image-config div{
-    width: 50%;
-    height: 20%; 
-}

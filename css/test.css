@@ -27,11 +27,15 @@ z-index: 0;
 }
 
 .image-config{
-    display:flex;
+ display:flex;
+
+}
+ .image-config div{
+  width: 50vw;
+ text-align: center;
 }
 
 .image-config img{
-    width: 595px;
-    height: 395px; 
+ width : 25vw ;
 }
 
