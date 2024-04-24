@@ -1,0 +1,144 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Bootstrap4　背景に画像を使う</title>
+<style>
+h2{
+text-align: center;
+}
+h3{
+text-align: center;
+color: #FFF;
+}
+
+.haikei1 {
+  background-image: url(image/Aoshima.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.haikei2 {
+  background-image: url(image/Aoshima.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.haikei3 {
+  background-image: url(image/Aoshima.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.haikei4 {
+  background-image: url(image/MiyazakiTop.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.haikei5 {
+  background-image: url(image/MiyazakiTop.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.haikei6 {
+  background-image: url(image/MiyazakiTop.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+<!-- 広告 --> 
+<div class="container">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ヘッダー用 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8994415259444885"
+     data-ad-slot="6745850613"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- /広告 --> 
+
+
+<!-- コンテンツ --> 
+
+<h2 class="my-5">fixed 無し</h2>
+
+<div class="container haikei1">
+<h3 class="my-5">コンテンツ1</h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div> 
+
+<div class="container haikei2">
+<h3 class="my-5">コンテンツ2</h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div> 
+
+<div class="container haikei3">
+<h3 class="my-5">コンテンツ3</h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div> 
+
+<h2 class="my-5">fixed あり</h2>
+
+<div class="container haikei4">
+<h3 class="my-5">コンテンツ4</h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div> 
+
+<div class="container haikei5">
+<h3 class="my-5">コンテンツ5</h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div> 
+
+<h2 class="my-5">fixed が効かないiOSはjqueryを使います。</h2>
+
+<div class="container haikei6">
+<h3 class="my-5">コンテンツ6</h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div> 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- /コンテンツ --> 
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+$(function () {
+    var parallaxContent = $(".haikei6");
+    var parallaxNum = parallaxContent.offset().top;
+    var parallaxFactor = 0.5;
+    var windowHeight = $(window).height();
+    var scrollYStart = parallaxNum - windowHeight;
+    $(window).on('scroll', function () {
+        var scrollY = $(this).scrollTop();
+        if (scrollY > scrollYStart) {
+            parallaxContent.css('background-position-y', (scrollY - parallaxNum) * parallaxFactor + 'px');
+        } 
+    });
+});
+</script>
+
+
+</body>
+</html>

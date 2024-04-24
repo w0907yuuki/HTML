@@ -40,4 +40,6 @@ z-index: 0;
  height: 27vw;
 }
 
- 
+.list-group li:last-child {
+  margin-bottom: 0;
+}

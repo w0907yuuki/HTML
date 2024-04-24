@@ -7,37 +7,49 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>miyazakisightseeing</title>
  <link rel="stylesheet" href="css/test.css">
-
+<style>
+.haikei4 {
+  background-image: url(image/Top.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+</style>
 
 </head>
   <body>
-   <p class="titleh18">Welcome to Miyazaki</p>
-    <div class="position-absolute top-0 end-0">
-    <!-- 折り畳み展開ポインタ -->
-    <div 	onclick="obj=document.getElementById('open').style;obj.display=(obj.display=='none')?'block':'none';">
-     <i class="bi bi-list"></i>
-    </div>
-    <!--// 折り畳み展開ポインタ -->
-    <!-- 折り畳まれ部分 -->
+   <div class="container haikei4">
+    <h1 class="titleh18">Welcome to Miyazaki</h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   </div>
+   <div class="position-absolute top-0 end-0">
+   <!-- 折り畳み展開ポインタ -->
+   <div 	onclick="obj=document.getElementById('open').style;obj.display=(obj.display=='none')?'block':'none';">
+    <i class="bi bi-list"></i>
+   </div>
+   <!--// 折り畳み展開ポインタ -->
+   <!-- 折り畳まれ部分 -->
     <div id="open" style="display:none;clear:both;">
-     <li>情報1</li>
-　　 <li>情報2</li>
-　　 <li>情報3</li>
+     	<li><a href =html/Sightseeing.html>観光地一覧を見る</a>					</li><li><a href =html/Gourmet.html>グルメ一覧を見る</a></li>				<li><a href =html/Shopping.html>おすすめのお土産を見る</a></li>				<li><a href =html/Event.html>イベント一覧を見る</a></li>				<li><a href =html/Hotels.html>ホテル一覧を見る</a></li>
     </div>
    </div>
    <!--// 折り畳まれ部分 -->
     <!-地図表示-->
-    <img src =https://th.bing.com/th/id/OIP.wM5Wxcc6crtF5XNCxwyj8gHaHa?rs=1&pid=ImgDetMain>
    <p class="titleh18">Sightseeing</p>
    <div class="image-config">
     <div>
+     
      <img src =image/Aoshima.jpg>
+     <p>青島</p>
     </div>
     <div>
      <img src =image/Moai.jpg>
+     <p>モアイ像</p>
     </div>
     <div>
      <img src =image/Takathihokyou.jpg>
+　　 <p>高千穂峡</p>
     </div>
    </div>
    <a href =html/Sightseeing.html>観光地一覧を見る</a>
@@ -45,12 +57,15 @@
    <div class="image-config">
     <div>
      <img src =image/ChikinNanban.jpg>
+　　 <p>チキン南蛮</p>
     </div>
     <div>
      <img src =image/Zidori.jpg>
+     <p>地鶏</p>
     </div>
     <div>
      <img src =image/Mango.jpg>
+     <p>宮崎マンゴー</p>
     </div>
    </div>
    <a href =html/Gourmet.html>グルメ一覧を見る</a>
@@ -58,12 +73,15 @@
    <div class="image-config">
     <div>
      <img src =image/Katara-na.jpg>
+　　 <p>マンゴーカタラーナ</p>
     </div>
     <div>
      <img src =image/S-Zidori.jpg>
+　　 <p>地鶏</p>
     </div>
     <div>
      <img src =image/Thi-zumanju.jpg>
+　　 <p>チーズ饅頭</p>
     </div>
    </div>
    <a href =html/Shopping.html>おすすめのお土産を見る</a>
@@ -71,12 +89,15 @@
    <div class="image-config">
     <div>
      <img src =image/MaturiMiyazaki.jpg>
+　　 <p>まつり宮崎</p>
     </div>
     <div>
      <img src =image/Hanabi.jpg>
+　　 <p>みやざき納涼花火大会</p>
     </div>
     <div>
      <img src =image/Furo-ranteMiyazaki.jpg>
+　　 <p>フローランテ宮崎</p>
     </div>
    </div>
    <a href =html/Event.html>イベント一覧を見る</a>
@@ -84,12 +105,15 @@
    <div class="image-config">
     <div>
      <img src =image/GreenRichHotel.jpg>
+　　 <p>グリーンリッチホテル</p>
     </div>
     <div>
      <img src =image/MiyazakiKankouHoteru.jpg>
+     <p>宮崎観光ホテル</p>
     </div>
     <div>
      <img src =image/Rizo-toMiyazaki.jpg>
+     <p>リゾート宮崎</p>
     </div>
    </div>
    <a href =html/Hotels.html>ホテル一覧をを見る</a>
